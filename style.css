@@ -1,0 +1,101 @@
+/* note: in Chromium, toggle device mode on/off to properly refresh the layout when emulating devices */
+/* gallery -- WHY need overflow??center? */
+
+
+/* custom font (latin) */
+@font-face {
+font-family: "Fira Sans";
+src: url(https://fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQVtXRa8TVwTICgirnJhmVJw.woff2);
+}
+
+
+
+
+/* global */
+body {
+color: #bbbbbb;
+background-color: #191919;
+font-family: "Fira Sans", sans;
+font-size: 11pt;
+margin: 0em;
+min-width: 25em;
+}
+
+a:link, a:visited {
+color: #ffff66;
+font-weight: bold;
+text-decoration: none;
+}
+
+a:hover, a:active {
+color: #ffffff;
+font-weight: bold;
+text-decoration: none;
+transition: color .4s ease;
+}
+
+h1, h2
+{ color: #ffffff; }
+
+h1
+{ font-size: 1.5em; }
+
+h2
+{ font-size: 1em; }
+
+
+
+
+/* articles */
+.article {
+margin: 2em 0em 2em 0em;
+padding: 2em 2em 2em 2em;
+max-width: 60em;
+margin-left: auto;
+margin-right: auto;
+}
+
+.article h1, h2
+{ margin: 0em; }
+
+.article h1 + img, .article h2 + img
+{ margin-top: 1em; }
+
+.article p + h2
+{ margin-top: 2em; }
+
+.article ul {
+line-height: 150%;
+margin: 0em 0em 0em 0em;
+padding-top: 0em;
+}
+
+
+
+
+/* gallery */
+.gall {
+padding: 0em 1em 0em 1em;
+overflow: auto;
+}
+
+.gall h1
+{ font-size: 3em; }
+
+.gall div.immy {
+margin: 1.8em;
+padding: 0.5em 0.5em 0.5em 0.5em;
+float: left;
+width: 160px;
+height: 250px;
+}
+
+.gall div.immy img {
+width: 100%;
+height: auto;
+}
+
+.gall div.desc {
+padding: 1em;
+text-align: center;
+}
